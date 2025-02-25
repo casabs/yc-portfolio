@@ -7,12 +7,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 50,
+                top: targetElement.offsetTop - 50,  // Adjust this offset as needed
                 behavior: 'smooth'
             });
         }
     });
 });
+
 
 // Activate Navigation Link on Scroll
 document.addEventListener("DOMContentLoaded", function () {
@@ -59,12 +60,14 @@ document.addEventListener("DOMContentLoaded", function () {
         let imgTitle = button.getAttribute('data-title');
 
         console.log("Image Source:", imgSrc);
+        console.log("Image Title:", imgTitle);
 
         if (imgSrc) {
             document.getElementById('modalImage').src = imgSrc;
             document.getElementById('certiModalLabel').textContent = imgTitle;
         } else {
-            document.getElementById('modalImage').src = "{{ asset('images/code-logo.png') }}";
+            document.getElementById('modalImage').src = "/assets/images/code-logo.png";
         }
     });
 });
+

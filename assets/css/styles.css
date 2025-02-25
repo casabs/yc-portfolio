@@ -151,12 +151,13 @@ header.fixed-top {
 }
 
 .img-python {
-    background-image: url('/images/certi-python.jpg');
+    background-image: url('/assets/images/certi-python.jpg');
 }
 
-.img-database{
-    background-image: url('/images/certi-database.jpg');
+.img-database {
+    background-image: url('/assets/images/certi-database.jpg');
 }
+
 
 /* logo animation */
 @keyframes moveRandom {
