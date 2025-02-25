@@ -42,6 +42,51 @@ header.fixed-top {
     margin-right: 15rem !important;
 }
 
+
+header .nav-con span {
+    font-size: 2vw;
+}
+
+@media (max-width: 768px) {
+    header .nav-con span {
+        font-size: 3vw;
+    }
+
+    header .nav a {
+        font-size: 0.25rem;
+    }
+
+    .nav-title {
+        font-size: 0.5rem !important;
+    }
+
+    .nav {
+        gap: 0 !important;
+    }
+
+    .nav-con {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+header .nav-con span {
+    font-size: 4vw;
+}
+
+header .nav a {
+    font-size: 0.5rem;
+}
+
+header.fixed-top {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+}
+
+
 .nav-pills .nav-link {
     color: black;
     transition: font-weight 0.2s ease-in-out, background-color 0.2s, color 0.2s;
@@ -284,10 +329,12 @@ header.fixed-top {
         height: auto;
         /* Allow height to adjust on small screens */
     }
-   .custom-bg {
+
+    .custom-bg {
         height: auto;
         /* Allow height to adjust on small screens */
     }
+
     .custom-card img {
         max-height: 500px;
         /* Reduce image size on smaller screens */
