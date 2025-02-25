@@ -62,6 +62,10 @@ header .nav-con span {
 
     .nav {
         gap: 0 !important;
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center the <ul> */
+        padding-left: 0; /* Remove default padding */
+        padding-right: 0; /* Remove default padding */
     }
 
     .nav-con {
