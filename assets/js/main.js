@@ -50,24 +50,3 @@ function copyToClipboard(event, text, type) {
 
     setTimeout(() => toast.style.display = "none", 2500);
 }
-
-// Modal
-document.addEventListener("DOMContentLoaded", function () {
-    const certiModal = document.getElementById('certiModal');
-    certiModal.addEventListener('show.bs.modal', function (event) {
-        let button = event.relatedTarget;
-        let imgSrc = button.getAttribute('data-img');
-        let imgTitle = button.getAttribute('data-title');
-
-        console.log("Image Source:", imgSrc);
-        console.log("Image Title:", imgTitle);
-
-        if (imgSrc) {
-            document.getElementById('modalImage').src = imgSrc;
-            document.getElementById('certiModalLabel').textContent = imgTitle;
-        } else {
-            document.getElementById('modalImage').src = "/assets/images/code-logo.png";
-        }
-    });
-});
-
